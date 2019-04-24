@@ -16,3 +16,7 @@ To use the EDC explainer, save the edc_agnostic.py and function_edc.py in the sa
 # Linear EDC
 
 There is also a model-specific implementation of the algorithm for linear models: edc_linear.py. This version is more efficient than the model-agnostic implementation, however, is less flexible in use.
+
+# Licence
+
+The EDC explainer is patented in US US9836455B2.
