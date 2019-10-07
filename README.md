@@ -13,7 +13,7 @@ We are currently working on a more general implementation where also the opposit
 
 To use the SEDC explanation algorithm, save the edc_agnostic.py and function_edc.py in the same directory and run them in an IDE of preference. Note that the default settings apply branch-and-bound in the search and return an explanation once one has been found. The feature names, classification function and threshold have to be entered by the user manually.  
 
-# Linear implementation for finding Evidence Counterfactuals (lin-EDC)
+# Linear implementation for finding Evidence Counterfactuals (lin-SEDC)
 
 There is also a model-specific implementation of the algorithm for linear models: edc_linear.py. This version is more efficient than the model-agnostic implementation, however, it is less flexible to use.
 
