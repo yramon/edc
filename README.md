@@ -11,7 +11,11 @@ We are currently working on a more general implementation where also the opposit
 
 # Installation
 
-To use the SEDC explanation algorithm, save the edc_agnostic.py and function_edc.py in the same directory and run them in an IDE of preference. Note that the default settings apply branch-and-bound in the search and return an explanation once one has been found. The feature names, classification function and threshold have to be entered by the user manually.  
+To use the SEDC explanation algorithm, save the edc_agnostic.py and function_edc.py in the same directory and run them in an IDE of preference. Note that the default settings apply branch-and-bound in the search and return an explanation once one has been found. The feature names, classification function and threshold have to be entered by the user manually. 
+
+# Demonstration
+
+For an example of using the SEDC explanation algorithm on a classification model built from a behavioral data set, consider the following notebook: [Gender prediction from Movielens data](https://github.com/edc/Tutorial_BehavioralData_SEDC.html). 
 
 # Linear implementation for finding Evidence Counterfactuals (lin-SEDC)
 
