@@ -15,7 +15,7 @@ To use the SEDC explanation algorithm, save the edc_agnostic.py and function_edc
 
 # Demonstration
 
-For an example of using the SEDC explanation algorithm on a classification model built from a behavioral data set, consider the following notebook: [Gender prediction from Movielens data](https://github.com/edc/Tutorial_BehavioralData_SEDC.html). 
+For an example of using the SEDC explanation algorithm on a classification model built from a behavioral data set, consider the following notebook: [Gender prediction from Movielens data](https://github.com/edc/tutorials/Tutorial_BehavioralData_SEDC.html). 
 
 # Linear implementation for finding Evidence Counterfactuals (lin-SEDC)
 
