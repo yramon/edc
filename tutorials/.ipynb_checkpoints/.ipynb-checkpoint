@@ -9,21 +9,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 24,
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "ModuleNotFoundError",
-     "evalue": "No module named 'edc_agnostic'",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-1-bea8fec4d900>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      4\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mscipy\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 6\u001b[1;33m \u001b[1;32mimport\u001b[0m \u001b[0medc_agnostic\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      7\u001b[0m \u001b[1;32mfrom\u001b[0m \u001b[0mfunction_edc\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mfn_1\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;31mModuleNotFoundError\u001b[0m: No module named 'edc_agnostic'"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "import pandas as pd\n",
     "import numpy as np\n",
@@ -57,19 +45,8 @@
    "outputs": [],
    "source": [
     "target = pd.read_csv('target_ML1M.csv')\n",
-    "a = pd.read_csv('data_ML1M_part1.csv')\n",
-    "b = pd.read_csv('data_ML1M_part2.csv')\n",
-    "c = pd.read_csv('data_ML1M_part3.csv')\n",
+    "data = pd.read_csv('data_ML1M.csv')\n",
     "feature_names = pd.read_csv('feature_names_ML1M.csv')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "data = pd.concat([a,b,c])"
    ]
   },
   {
