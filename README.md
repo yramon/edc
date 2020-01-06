@@ -1,6 +1,6 @@
 # Heuristic best-first search algorithm for finding Evidence Counterfactuals (SEDC)
 
-The SEDC algorithm is a model-agnostic heuristic best-first search algorithm for finding Evidence Counterfactuals, which are instance-level explanations for explaining model predictions of any classifier. It returns a minimal set of features so that removing these features results in a predicted class change. Removing means setting the corresponding feature value to zero. SEDC has been originally proposed [in this paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2282998) for explaining document classifications.
+The SEDC algorithm is a model-agnostic heuristic best-first search algorithm for finding Evidence Counterfactuals, which are instance-level explanations for explaining model predictions of any classifier. It returns a minimal set of features so that removing these features results in a predicted class change. Removing means setting the corresponding feature value to zero. SEDC has been originally proposed [in this paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2282998){:target="_blank"} for explaining document classifications.
 
 At the moment, SEDC supports binary classifiers built on high-dimensional, sparse data where a zero feature value corresponds to the absence of the feature. For instance, for behavioral data such as web browsing data, visiting an URL would set the feature value to 1, else 0. The nonzero value indicates that the behavior is present. Setting the feature value to zero would remove this evidence from the browsing history of a user. Another example is text data, where each token is represented by an individual feature. Setting the feature value (term frequency, tf-idf, etc.) to zero would mean that the corresponding token is removed from the document. 
 
@@ -27,7 +27,7 @@ To use the multi-class implementation, use SEDC_agnostic_multiclass.py and funct
 
 # Demonstration
 
-For an example of using the SEDC explanation algorithm on a classification model built from a behavioral data set, consider the following notebook: [Gender prediction from Movielens data](https://yramon.github.io/tutorials/Tutorial_BehavioralData_SEDC.html).
+For an example of using the SEDC explanation algorithm on a classification model built from a behavioral data set, consider the following notebook: [Gender prediction from Movielens data](https://yramon.github.io/tutorials/Tutorial_BehavioralData_SEDC.html){:target="_blank"}.
 
 # Licence
 
