@@ -15,7 +15,7 @@ There is also a model-specific implementation of the algorithm for linear models
 
 # Multi-class classification tasks
 
-We have also written an implementation that can be used for multi-class problems (e.g., problems where the target variable has more than two classes). Here, we explain why an instance is classified as a certain class. The counterfactual explanation shows the set of features that, when set to zero, the predicted class would change to another class. It is important to note that we use a one-vs-rest approach. More specifically, when there are three different classes, then we assume there are three binary trained classifier (one classifier for each target class).
+We have also written an implementation that can be used for multi-class problems (e.g., problems where the target variable has more than two classes). Here, we explain why an instance is classified as a certain class. The counterfactual explanation shows the set of features that, when set to zero, the predicted class would change to another class. It is important to note that we use a one-vs-rest approach. More specifically, when there are three different classes, then we assume there are three binary trained classifiers (one classifier for each target class).
 
 # Installation
 
