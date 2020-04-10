@@ -2,9 +2,9 @@
 
 The SEDC algorithm is a model-agnostic heuristic best-first search algorithm for finding Evidence Counterfactuals, which are instance-level explanations for explaining model predictions of any classifier. It returns a minimal set of features so that removing these features results in a predicted class change. Removing means setting the corresponding feature value to zero. SEDC has been originally proposed [in this paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2282998) for explaining document classifications.
 
-At the moment, SEDC supports binary classifiers built on high-dimensional, sparse data where a zero feature value corresponds to the absence of the feature. For instance, for behavioral data such as web browsing data, visiting an URL would set the feature value to 1, else 0. The nonzero value indicates that the behavior is present. Setting the feature value to zero would remove this evidence from the browsing history of a user. Another example is text data, where each token is represented by an individual feature. Setting the feature value (term frequency, tf-idf, etc.) to zero would mean that the corresponding token is removed from the document. 
+At the moment, SEDC supports binary classifiers built on high-dimensional, sparse data where a zero feature value corresponds to the absence of the feature. For instance, for behavioral data such as web browsing data, visiting an URL would set the feature value to 1, else 0. The nonzero value indicates that the behavior is present. Setting the feature value to zero would remove this evidence from the browsing history of a user. Another example is textual data, where each token is represented by an individual feature. Setting the feature value (term frequency, tf-idf, etc.) to zero would mean that the corresponding token is removed from the document. 
 
-# Explaining positively predicted instances 
+# Explaining positively-predicted instances 
 An important sidenote is that the current implementation can only be used to explain positively predicted instances classified by a binary classification model. In other words, the instance you want to explain should have a probability or score that exceeds a certain threshold value (eg, 0.5 for logistic regression or 0 for SVMs).
 
 We are currently working on a more general implementation where also the opposite is possible: explaining negatively predicted instances. For now, if you want to do so, you can use the multi-class implementation and use two binary classifiers (one for each target class). If you do this, then you can immediately explain negatively predicted instances.
@@ -25,9 +25,9 @@ To use the linear implementation, use edc_linear.py.
 
 To use the multi-class implementation, use SEDC_agnostic_multiclass.py and function_edc.py (same directory and run them in IDE of preference). 
 
-# Demonstration
+# Tutorials with behavior and text data
 
-For an example of using the SEDC explanation algorithm on a classification model built from a behavioral data set, consider the following notebook: [Gender prediction from Movielens data](https://yramon.github.io/tutorials/Tutorial_BehavioralData_SEDC.html).
+For an example of using the SEDC explanation algorithm on a classification model built from high-dimensional, sparse behavioral data and textual data, consider the following notebooks: Gender prediction from movie viewing data (Movielens1M) using a [Logistic Regression model](https://yramon.github.io/tutorials/Tutorial_BehavioralDataMovielens_LR_SEDC.html) and a [Multilayer Perceptron model](https://yramon.github.io/tutorials/Tutorial_BehavioralDataMovielens_MLP_SEDC.html), and [Topic prediction from news documents](https://yramon.github.io/tutorials/Tutorial_TextData_SEDC.html) (20Newsgroups data) using a linear Support Vector Machine.
 
 # Licence
 
