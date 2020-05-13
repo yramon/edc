@@ -12,7 +12,7 @@ We are currently working on a more general implementation where also the opposit
 # Visualization of the (model-agnostic) SEDC algorithm
 
 <br>
-<img height="300" src="https://github.com/yramon/edc/blob/master/img/sedc-visualisation.png" />
+<img height="600" src="https://github.com/yramon/edc/blob/master/img/sedc-visualisation.png" />
 <br>
 
 # Linear implementation for finding Evidence Counterfactuals (lin-SEDC)
