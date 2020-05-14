@@ -10,6 +10,7 @@ An important sidenote is that the current implementation can only be used to exp
 We are currently working on a more general implementation where also the opposite is possible: explaining negatively predicted instances. For now, if you want to do so, you can use the multi-class implementation and use two binary classifiers (one for each target class). If you do this, then you can immediately explain negatively predicted instances.
 
 # Visualization of the (model-agnostic) SEDC algorithm
+This figure visualizes the SEDC algorithm and code (sedc-algorithm.py). To understand how the expand_and_prune() function works (in fn_sedc.py), see figure expand_and_prune.png in "img".
 
 <br>
 <img height="600" src="https://github.com/yramon/edc/blob/master/img/sedc-visualisation.png" />
@@ -17,7 +18,7 @@ We are currently working on a more general implementation where also the opposit
 
 # Linear implementation for finding Evidence Counterfactuals (lin-SEDC)
 
-There is also a model-specific implementation of the algorithm for linear models: edc_linear.py. This version is more efficient than the model-agnostic implementation, however, it is less flexible to use.
+There is also a model-specific implementation of the algorithm for linear models: edc_linear.py (in "LinearEDC"). This version is more efficient than the model-agnostic implementation, however, it is less flexible to use.
 
 # Multi-class classification tasks
 
