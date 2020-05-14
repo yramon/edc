@@ -29,7 +29,7 @@ To use the SEDC explanation algorithm, save the sedc_algorithm.py and function_e
 
 For the linear implementation, use edc_linear.py. 
 
-For the multi-class implementation, use SEDC_agnostic_multiclass.py and function_edc.py (same directory and run them in IDE of preference). 
+For the multi-class implementation, use SEDC_agnostic_multiclass.py and fn_sedc.py (same directory and run them in IDE of preference). 
 
 # Tutorials with behavior and text data
 
